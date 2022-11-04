@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,6 +23,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//logout in laravel
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admins.index');

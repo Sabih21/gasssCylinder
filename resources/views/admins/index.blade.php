@@ -1,9 +1,11 @@
 @extends('layouts.master')
  
 @section('content')
+<div class="container col-md-11">
+
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div class="pull-left mt-3">
                 <h2>Gas Cylinder Admins</h2>
             </div>
             <div class="pull-right">
@@ -18,7 +20,7 @@
         </div>
     @endif
    
-    <table class="table table-bordered">
+    <table class="table table-bordered mt-3">
         <tr>
             <th>No</th>
             <th>Name</th>
@@ -55,7 +57,7 @@
         </tr>
         @endforeach
     </table>
-  
+  </div>
     {!! $admins->links() !!}
       
 @endsection

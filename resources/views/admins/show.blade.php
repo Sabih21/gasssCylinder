@@ -1,6 +1,8 @@
 <!-- @extends('admins.layout')
   
 @section('content') -->
+<div class="container col-md-11">
+
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
@@ -50,5 +52,6 @@
                 {{ $admin->dev_info }}
             </div>
         </div>
+    </div>
     </div>
 @endsection

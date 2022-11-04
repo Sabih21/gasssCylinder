@@ -1,7 +1,7 @@
 @extends('layouts.master')
   
 @section('content') 
-
+<div class="container col-md-11">
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
@@ -74,7 +74,7 @@
         </div>
     </div>
    
-
+    </div>
 
 </form>
 @endsection
